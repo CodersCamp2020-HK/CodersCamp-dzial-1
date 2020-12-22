@@ -14,8 +14,8 @@ section{
     width: 100%;
     margin: 0;
     padding: 0;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
 }
 
 .titlecard{
@@ -36,7 +36,7 @@ section{
     justify-content: center;
     text-justify: center;
     text-align: center;
-    height: 45%;
+    /* height: 45%; */
 }
 
 .container.columns{
@@ -44,12 +44,14 @@ section{
     flex-direction: column;
     flex-basis: content;
     justify-content: center;
+    /* margin: auto; */
 } 
 .column.square{
     min-height: 280px;
     display: flex;
     flex-direction: column;
     justify-items: center;
+    /* margin: auto; */
 }
 .aboutMe{
     background: #295EB2;
@@ -112,7 +114,7 @@ section{
 }
 .column{
     width: 100%;
-    max-width:30rem;
+    max-width: 30rem;
 }
 .column-sm{
     width: 100%;
@@ -146,17 +148,28 @@ li{
 .skills, .title{
     background-color: #295EB2;
     color: #ffffff;
-    min-height: 10em;
     margin: auto;
     padding: 1em;
 }
 
-div#skills{
+#skills{
     display: flex;
     flex-direction: column;
     align-items: center;
-    min-height: 40em;
+    min-height: 5em;
 }
+
+.skills1{
+    border-top-left-radius: 1em;
+    border-bottom-left-radius: 1em;
+}
+
+.skills2, #animation{
+    border-top-right-radius: 1em;
+    border-bottom-right-radius: 1em;
+}
+
+
 
 /* Form */
 #form, .twocolumns{
@@ -181,18 +194,18 @@ form {
    z-index: -1;
    background-color: #295EB2;
    padding: 1em;
+   border-top-left-radius: 1em;
+   border-bottom-left-radius: 1em;
 }
 
-div#form{
+#form{
     display: flex;
     justify-items: flex-start;
     align-items: stretch;
-}
-div.form{
-    width: 70%;
+    margin: auto;
 }
 
-div.row_name{
+.row_name{
     display: flex;
     justify-content: center;
 }
@@ -234,7 +247,7 @@ input[type=text]:focus{
 }
 
 .textarea{
-    min-height:10em;
+    min-height: 10em;
     font-style: italic;
     background-color: #E7EFFF;
 }
@@ -251,18 +264,18 @@ input[type=text]:focus{
 }
 
 /* Dot Animation */
-div#animation{
+#animation{
     display: flex;
     justify-items: flex-start;
     align-items: stretch;
-    width: 30%;
     padding: 2em;
+    max-width: 15em;
 }
   
   .dot {
     align-self: flex-end;
     margin-left: 15%;
-    padding: 2px 5px;
+    padding: 2px 10px;
     animation: xAxis 2.5s infinite cubic-bezier(0.02, 0.01, 0.21, 1);
   }
   .dot::after{
