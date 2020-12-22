@@ -7,12 +7,156 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>CodersCamp | Projekt 1 - HTML i CSS</title>
     <meta name="description" content="CodersCamp to darmowy, otwarty kurs programowania webowego we Wrocławiu. Sprawdź, czego nauczysz się na CodersCamp i spróbuj swoich sił w branży IT!">
-
+    <link rel="stylesheet" href="style.css"> 
+    <!-- FONTS -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a1172709c4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
+        <div class="titlecard">
+        <section class="section ">
+            <div class="container">
+                <div class="columns">
+                    <div class="column">
+                        <h1 class="welcome">Welcome!</h1>
+                    </div>
+                </div>
+            </div>
+        </section>
+          </div>
 
-<p>CodersCamp - projekt 1. Tutaj możesz zacząć swoją zabawę!</p>
-<p>TEST commit</p>
+        <section class="section">
+            <div class="container">
+                 <div class="column square aboutMe">
+                     <span class="borderbox1">
+                         <a href="#Hi" id="aboutMe">
+                            <h2 class="h2" id="aboutMe">About me</h2>
+                        </a>
+                         
+                    </span>
+                </div>
+            <div class="column square contactMe">
+                <span class="borderbox2">
+                    <a href="#form" id="contactMe">
+                        <h2 class="h2">Contact me</h2>  
+                    </a>
+                </span>
+            </div>
+        </div>
+        </section>
+  
+        
+        <section class="section section1">
+            <div class="container">
+                <div id="Hi">
+                    <h1 class="title">Hi! I'm Weronika. I'm a begginer web developer Lorem, ipsum dolor sit amet consectetur adipisicing elit. Repellendus et natus ea amet, laudantium hic dolorem cumque non quis similique. Molestias culpa architecto quos quod omnis a? Porro, obcaecati culpa.</h2>
+                    <h2 class="subtitle">Code with loving</h2>
+                </div>
+                <div class="quality container">
+                <div class="column-sm">
+                    <h3 class="description">Thoughtful projects</h3>
+                    <image class="image" src="picktures/brain.png">
+                </div>
+                <div class="column-sm">
+                    <h3 class="description">Unusual approach</h3>
+                    <image class="image" src="picktures/cosmit.png">
+                </div>
+                <div class="column-sm">
+                    <h3 class="description">Partnership</h3>
+                    <image class="image" src="picktures/hands.png">
+                </div>
+            </div>
+        </div>
+        </section>
+
+        <section class="section section2 container twocolumns">
+                <div class="column">
+                    <div class="skills">
+                        <h2>Languages</h2>
+                        <image class="image" id="list" src="picktures/light.png"></image>
+                    </div>
+                    
+                    <div id="skills">
+                    <ul class="points">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JS</li>
+                        <li>Vue</li>
+                        <li>Python</li>
+                        <li>C</li>
+                    </ul>
+                </div>
+
+                </div>
+                <div class="column">
+                    <div class="skills">
+                        <h2>DevTools</h2>
+                        <image class="image" id="list" src="picktures/config.png"></image>
+                    </div>
+                    
+                    <div id="skills">
+                    <ul class="points">
+                        <li>Atom</li>
+                        <li>VS Code</li>
+                        <li>Git</li>
+                        <li>Github</li>
+                    </ul>
+                </div>
+                </div>
+        </section>
+
+        <section class="section3">
+            <div class="container" id="form">
+                <div class="column form">
+                <form>
+                    <h2>How can I help you today?</h2>
+                    <div class="row_name">
+                        <div class="name form_item">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" placeholder="John">
+                        </div>
+                        <div class="email form_item">
+                            <label for="email">Email:</label>
+                            <input type="text" name="email" placeholder="john@gmail.com">
+                        </div>
+                    </div>
+                    <div class="row_message ">
+                        <div class="rows">
+                        <div class="column label">
+                            <label for="message">Message:</label>
+                        </div>
+                        <div class="column">
+                            
+                            <div class="textarea active" contenteditable="true" placeholder="Put some text here."></div>
+                        </div>
+                    </div>
+                        <button class="submit" type="submit">Submit</button>
+                    </div>
+
+                </form>
+ 
+            </div>
+            <div class="column" id="animation">
+                <div class="dot"></div>
+            </div>
+            </div>
+        </section>
+
+
+    </div>
+
 </body>
+<footer>
+    <div>
+    <i class="fab fa-github fa-5x"></i>
+</div>
+<div>
+    <i class="fab fa-facebook fa-5x"></i>
+</div>
+<div>
+    <i class="fab fa-linkedin fa-5x"></i>
+</div>
+</footer>
 </html>
